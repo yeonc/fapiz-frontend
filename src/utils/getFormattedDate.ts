@@ -5,15 +5,15 @@ import getFullTime from 'utils/getFullTime'
 const TWO_WEEKS = 14
 const TODAY = 1
 
-const getTodayTime = (createdDate: any) => {
+const getTodayTime = (createdDate: Date) => {
   return `오늘 ${getFullTime(createdDate)}`
 }
 
-const getRecentDate = (daysBetweenCreatedAndToday: any) => {
+const getRecentDate = (daysBetweenCreatedAndToday: number) => {
   return `${daysBetweenCreatedAndToday}일 전`
 }
 
-const getFormattedDate = (createdDate: any) => {
+const getFormattedDate = (createdDate: Date): string => {
   const today = new Date()
   const daysBetweenCreatedAndToday = getDaysBetweenTwoDate(createdDate, today)
 

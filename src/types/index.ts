@@ -36,3 +36,5 @@ export type FashionStyle = {
   id: number
   name: FashionStyleName
 }
+
+export type SearchKeyword = string | null

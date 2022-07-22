@@ -18,7 +18,6 @@ const queryForFetchingSnsPosts = createUrlQuery({
   'populate[1]': 'likeUsers',
   'populate[2]': 'author',
   'pagination[limit]': 200,
-  'filters[author][isHidden][$eq]': false,
 })
 const mutateKeyForFetchingSnsPosts = {
   url: `/api/sns-posts?${queryForFetchingSnsPosts}`,

@@ -28,7 +28,6 @@ const SnsPage = () => {
 
   const user = {
     id: userFromStrapi.id,
-    isHidden: userFromStrapi.isHidden,
     username: userFromStrapi.username,
     height: userFromStrapi.height,
     weight: userFromStrapi.weight,

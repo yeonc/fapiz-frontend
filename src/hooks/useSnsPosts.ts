@@ -1,6 +1,6 @@
 import useSWR from 'swr'
 
-const useSnsPosts = (query: any) => {
+const useSnsPosts = (query: string) => {
   const { data, error } = useSWR({
     url: `/api/sns-posts?${query}`,
   })

@@ -1,6 +1,11 @@
 import convertMillisecondsToDays from 'utils/convertMillisecondsToDays'
 
-const getDaysBetweenTwoDate = (startDate: any, endDate: any) => {
+type DaysBetweenTwoDate = number
+
+const getDaysBetweenTwoDate = (
+  startDate: Date,
+  endDate: Date
+): DaysBetweenTwoDate => {
   const startMilliseconds = startDate.getTime()
   const endMilliseconds = endDate.getTime()
 

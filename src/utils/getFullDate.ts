@@ -1,4 +1,6 @@
-const getFullDate = (date: any) => {
+type FullDateString = string
+
+const getFullDate = (date: Date): FullDateString => {
   const year = date.getFullYear()
   const month = date.getMonth() + 1
   const day = date.getDate()
